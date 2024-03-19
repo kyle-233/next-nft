@@ -11,7 +11,7 @@ export const Icons = {
       <g>
         <title>Layer 1</title>
         <text
-          fill="#ffffff"
+          fill="none"
           x="18.47156"
           y="35.39563"
           id="svg_23"
@@ -26,7 +26,7 @@ export const Icons = {
           V
         </text>
         <text
-          fill="#ffffff"
+          fill="none"
           x="33.68558"
           y="35.39563"
           id="svg_24"
@@ -56,7 +56,7 @@ export const Icons = {
           s
         </text>
         <text
-          fill="#ffffff"
+          fill="none"
           stroke="#000"
           x="61.22472"
           y="35.39563"

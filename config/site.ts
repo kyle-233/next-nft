@@ -1,4 +1,13 @@
+import type { MainNavItem } from "@/types";
+
 export const siteConfig = {
+  mainNav: [
+    {
+      title: "Minting",
+      href: "/minting",
+      external: false,
+    },
+  ] satisfies MainNavItem[],
   footerNav: [
     {
       title: "About Us",

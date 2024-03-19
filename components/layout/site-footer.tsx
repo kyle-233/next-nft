@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const SiteFooter = () => {
   return (
-    <footer className="w-full bg-foreground text-background">
+    <footer className="w-full">
       <div className="container flex flex-row min-h-72 py-10 justify-between">
         <div className="flex mr-72">
           <Link href="/">
@@ -32,7 +32,7 @@ export const SiteFooter = () => {
           ))}
         </div>
       </div>
-      <div className="flex mx-16 border-t-[.5px] border-background h-24 justify-center items-center text-lg">
+      <div className="flex mx-16 border-t-[.5px] h-24 justify-center items-center text-lg">
         Built by Kyle
       </div>
     </footer>

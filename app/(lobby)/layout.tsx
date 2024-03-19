@@ -1,4 +1,5 @@
 import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
 
 interface LobbyLayoutProps {
   children?: React.ReactNode;
@@ -7,6 +8,7 @@ interface LobbyLayoutProps {
 const LobbyLayout = ({ children }: LobbyLayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SiteHeader />
       <main className="flex-1">{children}</main>
       <SiteFooter />
     </div>
