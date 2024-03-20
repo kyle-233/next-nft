@@ -23,6 +23,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-pattern":
+          "url('https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/gradient_bg01.png')",
       },
       colors: {
         border: "hsl(var(--border))",
