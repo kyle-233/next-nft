@@ -18,13 +18,26 @@ const config: Config = {
         "2xl": "1440px",
       },
     },
+    fontFamily: {
+      unicon: ["Unicons"],
+    },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial": "linear-gradient(25deg, #2600fc, #ff00ea)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-pattern":
           "url('https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/gradient_bg01.png')",
+      },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(180deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        spin: "spin 10s linear 0s infinite",
       },
       colors: {
         border: "hsl(var(--border))",
