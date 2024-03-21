@@ -34,6 +34,27 @@ export const HomeHero = () => {
             <div className="flex">
               <div className="flex-1">
                 <div className="relative">
+                  <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/ethereum-01.png"
+                    alt=""
+                    width={44}
+                    height={44}
+                    className="absolute -z-[1] -top-[25%] left-[38%]"
+                  />
+                  <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/circle-03.png"
+                    alt=""
+                    width={24}
+                    height={26}
+                    className="absolute -z-[1] -bottom-[16%] left-[12%]"
+                  />
+                  <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/circle-03.png"
+                    alt=""
+                    width={24}
+                    height={26}
+                    className="absolute -z-[1] top-[14%] -left-[12%]"
+                  />
                   <h2 className=" text-7xl leading-none font-bold mb-6">
                     Supercharge your NFT Adventure
                   </h2>
@@ -57,6 +78,28 @@ export const HomeHero = () => {
               <div className="flex-1">
                 <div className="ml-6 z-[1] relative">
                   <Icons.hero className="absolute -top-[17%] opacity-30 -z-[1] align-middle" />
+                  <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/themes/nerko/assets/img/others/blob-dashed.svg"
+                    alt=""
+                    width={300}
+                    height={300}
+                    objectFit="contain"
+                    className="absolute -top-[10%] right-0 opacity-10 -z-[1] fill-transparent"
+                  />
+                  <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/bitcoin-01.png"
+                    alt=""
+                    width={44}
+                    height={44}
+                    className="absolute -z-[1] top-[67%] -left-[21%]"
+                  />
+                  <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/x.png"
+                    alt=""
+                    width={28}
+                    height={28}
+                    className="absolute -z-[1] -top-[4%] right-[16%]"
+                  />
                   <div className="flex gap-4">
                     <div className="flex-1 relative">
                       <div className="flex-1 relative aspect-[3/4] rounded-3xl overflow-hidden">
@@ -73,7 +116,7 @@ export const HomeHero = () => {
                     <div className="flex-1 relative">
                       <div className="flex-1 relative aspect-[3/4] mt-12 rounded-3xl overflow-hidden">
                         <Image
-                          src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/art_09.jpg"
+                          src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/art_06.jpg"
                           alt=""
                           objectFit="contain"
                           decoding="async"
