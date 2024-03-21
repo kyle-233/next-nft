@@ -165,7 +165,7 @@ export const Icons = {
           d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
         ></path>
       </defs>
-      <text font-size="11.75">
+      <text fontSize="11.75">
         <textPath xlinkHref="#circle">
           view in opensea • view in opensea •
         </textPath>

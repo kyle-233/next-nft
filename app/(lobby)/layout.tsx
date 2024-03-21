@@ -9,7 +9,7 @@ const LobbyLayout = ({ children }: LobbyLayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
-      <main className="flex">{children}</main>
+      <main className="flex flex-col">{children}</main>
       <SiteFooter />
     </div>
   );
