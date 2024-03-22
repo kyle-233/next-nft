@@ -6,7 +6,7 @@ import { MainNav } from "@/components/layout/main-nav";
 export const SiteHeader = () => {
   return (
     <header>
-      <div className="absolute top-0 left-0 w-full">
+      <div className="absolute top-0 left-0 w-full z-[8]">
         <div className="container h-[80px] px-5 flex items-center gap-6">
           <Link href="/" className="mr-16">
             {/* <Icons.logo className="" /> */}

@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -55,7 +56,7 @@ export const HomeHero = () => {
                     height={26}
                     className="absolute -z-[1] top-[14%] -left-[12%]"
                   />
-                  <h2 className=" text-7xl leading-none font-bold mb-6">
+                  <h2 className=" text-7xl leading-none font-bold mb-6 font-heading">
                     Supercharge your NFT Adventure
                   </h2>
                   <p className=" text-2xl leading-normal max-w-[75%] mb-8">
@@ -83,7 +84,6 @@ export const HomeHero = () => {
                     alt=""
                     width={300}
                     height={300}
-                    objectFit="contain"
                     className="absolute -top-[10%] right-0 opacity-10 -z-[1] fill-transparent"
                   />
                   <Image
@@ -102,35 +102,35 @@ export const HomeHero = () => {
                   />
                   <div className="flex gap-4">
                     <div className="flex-1 relative">
-                      <div className="flex-1 relative aspect-[3/4] rounded-3xl overflow-hidden">
+                      <AspectRatio ratio={3 / 4}>
                         <Image
                           src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/art_09.jpg"
                           alt=""
-                          objectFit="contain"
+                          width={600}
+                          height={800}
                           decoding="async"
-                          layout="fill"
-                          className="w-full max-w-full h-auto border-none aspect-[3/4] rounded-3xl"
+                          className="rounded-3xl"
                         />
-                      </div>
+                      </AspectRatio>
                     </div>
-                    <div className="flex-1 relative">
-                      <div className="flex-1 relative aspect-[3/4] mt-12 rounded-3xl overflow-hidden">
+                    <div className="flex-1 relative mt-12">
+                      <AspectRatio ratio={3 / 4}>
                         <Image
                           src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/art_06.jpg"
                           alt=""
-                          objectFit="contain"
+                          width={600}
+                          height={800}
                           decoding="async"
-                          layout="fill"
                           className="w-full max-w-full h-auto border-none aspect-[3/4] rounded-3xl"
                         />
-                      </div>
+                      </AspectRatio>
                     </div>
                   </div>
                   <Link
                     href="/"
                     className="absolute left-0 top-2/4 -translate-x-[70%] -translate-y-[61%] rounded-full bg-white before:content-[''] before:border before:border-['rgba(131, 131, 131, 0.175)] before:absolute before:top-0 before:left-0 before:block before:w-[78px] before:h-[78px] before:rounded-full before:translate-x-[20px] before:translate-y-[20px]"
                   >
-                    <Icons.view className=" fill-[#e348ff] max-w-[132px] h-auto right-[10%] inline-flex uppercase origin-center animate-spin" />
+                    <Icons.view className=" fill-[#e348ff] max-w-[148px] h-auto right-[10%] inline-flex uppercase origin-center animate-spin" />
                     <Icons.arrowTopRight className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-8 font-bold text-[#e348ff]" />
                   </Link>
                 </div>

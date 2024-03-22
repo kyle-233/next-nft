@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import "@/styles/globals.css";
+import { cn } from "@/lib/utils";
+import { fontHeading, fontMono, fontSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen">
+      <body
+        className={cn(
+          "min-h-screen bg-background font-mono antialiased",
+          fontSans.variable,
+          fontMono.variable,
+          fontHeading.variable,
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
