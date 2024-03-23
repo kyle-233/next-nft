@@ -10,7 +10,7 @@ export const MintSection = () => {
         <div className="relative mx-[100px]">
           <div className="flex flex-wrap">
             <div className="base-auto grow-0 shrink-0 w-1/2 px-4">
-              <div className=" py-12 px-[25px] rounded-3xl mb-8 bg-white flex shadow-cardxl">
+              <div className=" py-12 px-[25px] rounded-3xl mb-8 flex shadow-cardxl dark:bg-[#ffffff0d]">
                 <div className=" relative max-w-[72px] mr-[45px]">
                   <Image
                     src={
@@ -34,7 +34,7 @@ export const MintSection = () => {
               </div>
             </div>
             <div className="base-auto grow-0 shrink-0 w-1/2 px-4">
-              <div className=" py-12 px-[25px] rounded-3xl mb-8 bg-white flex shadow-cardxl">
+              <div className=" py-12 px-[25px] rounded-3xl mb-8 flex shadow-cardxl dark:bg-[#ffffff0d]">
                 <div className=" relative max-w-[72px] mr-[45px]">
                   <Image
                     src={
@@ -58,7 +58,7 @@ export const MintSection = () => {
               </div>
             </div>
             <div className="base-auto grow-0 shrink-0 w-1/2 px-4">
-              <div className=" py-12 px-[25px] rounded-3xl mb-8 bg-white flex shadow-cardxl">
+              <div className=" py-12 px-[25px] rounded-3xl mb-8 flex shadow-cardxl dark:bg-[#ffffff0d]">
                 <div className=" relative max-w-[72px] mr-[45px]">
                   <Image
                     src={
@@ -82,7 +82,7 @@ export const MintSection = () => {
               </div>
             </div>
             <div className="base-auto grow-0 shrink-0 w-1/2 px-4">
-              <div className=" py-12 px-[25px] rounded-3xl mb-8 bg-white flex shadow-cardxl">
+              <div className=" py-12 px-[25px] rounded-3xl mb-8 flex shadow-cardxl dark:bg-[#ffffff0d]">
                 <div className=" relative max-w-[72px] mr-[45px]">
                   <Image
                     src={

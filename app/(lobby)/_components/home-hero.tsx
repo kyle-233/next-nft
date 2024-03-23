@@ -80,11 +80,18 @@ export const HomeHero = () => {
                 <div className="ml-6 z-[1] relative">
                   <Icons.hero className="absolute -top-[17%] opacity-30 -z-[1] align-middle" />
                   <Image
+                    src="https://themegenix.net/wp/nerko/wp-content/themes/nerko/assets/img/others/blob-dashed-light.svg"
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="hidden dark:block absolute -top-[10%] right-0 opacity-10 -z-[1] fill-transparent"
+                  />
+                  <Image
                     src="https://themegenix.net/wp/nerko/wp-content/themes/nerko/assets/img/others/blob-dashed.svg"
                     alt=""
                     width={300}
                     height={300}
-                    className="absolute -top-[10%] right-0 opacity-10 -z-[1] fill-transparent"
+                    className="block dark:hidden absolute -top-[10%] right-0 opacity-10 -z-[1] fill-transparent"
                   />
                   <Image
                     src="https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/bitcoin-01.png"
@@ -128,7 +135,7 @@ export const HomeHero = () => {
                   </div>
                   <Link
                     href="/"
-                    className="absolute left-0 top-2/4 -translate-x-[70%] -translate-y-[61%] rounded-full bg-white before:content-[''] before:border before:border-['rgba(131, 131, 131, 0.175)] before:absolute before:top-0 before:left-0 before:block before:w-[78px] before:h-[78px] before:rounded-full before:translate-x-[20px] before:translate-y-[20px]"
+                    className="absolute left-0 top-2/4 -translate-x-[70%] -translate-y-[61%] rounded-full bg-white dark:bg-[#241f2b] before:content-[''] before:border before:border-[#8383832d] before:absolute before:top-0 before:left-0 before:block before:w-[78px] before:h-[78px] before:rounded-full before:translate-x-[20px] before:translate-y-[20px]"
                   >
                     <Icons.view className=" fill-[#e348ff] max-w-[148px] h-auto right-[10%] inline-flex uppercase origin-center animate-spin" />
                     <Icons.arrowTopRight className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-8 font-bold text-[#e348ff]" />
