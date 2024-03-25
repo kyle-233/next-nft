@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icons } from "@/components/icons";
 import { ModeToggle } from "./mode-toggle";
 import { MainNav } from "@/components/layout/main-nav";
+import { ConnectWalletBtn } from "@/components/connect-wallet-btn";
 
 export const SiteHeader = () => {
   return (
@@ -16,6 +17,7 @@ export const SiteHeader = () => {
           </Link>
           <MainNav />
           <ModeToggle />
+          <ConnectWalletBtn />
         </div>
       </div>
     </header>

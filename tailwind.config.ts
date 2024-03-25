@@ -11,6 +11,7 @@ const config = {
   ],
   prefix: "",
   theme: {
+    transparent: "transparent",
     container: {
       center: true,
       padding: "2rem",

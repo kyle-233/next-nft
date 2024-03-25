@@ -8,7 +8,8 @@ export const SiteFooter = () => {
       <div className="container flex flex-row min-h-72 py-10 justify-between">
         <div className="flex mr-72">
           <Link href="/">
-            <Icons.logo />
+            {/* <Icons.logo /> */}
+            <h1>Logo</h1>
             <span className="sr-only">VESE NFT</span>
           </Link>
         </div>
