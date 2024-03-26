@@ -1,6 +1,10 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { connectWallet, getCurrentWalletConnected } from "@/lib/interact";
+import {
+  addWalletChainChangedListener,
+  connectWallet,
+  getCurrentWalletConnected,
+} from "@/lib/interact";
 import { useEffect, useState } from "react";
 import { useToast } from "@/components/providers/use-toast";
 
@@ -54,6 +58,7 @@ export const ConnectWalletBtn = () => {
   useEffect(() => {
     const getWalletConnect = async () => {
       addWalletListener();
+      addWalletChainChangedListener();
       const { address, status } = await getCurrentWalletConnected();
       setWallet(address);
       setStatus(status as any);
@@ -62,6 +67,7 @@ export const ConnectWalletBtn = () => {
       });
     };
     getWalletConnect();
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (

@@ -75,3 +75,11 @@ export const getCurrentWalletConnected = async () => {
     };
   }
 };
+
+export const addWalletChainChangedListener = () => {
+  if (window.ethereum) {
+    window.ethereum.on("chainChanged", (chainId: string) => {
+      window.location.reload();
+    });
+  }
+};
