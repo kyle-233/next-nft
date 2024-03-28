@@ -4,6 +4,7 @@ import { HomeHero } from "./_components/home-hero";
 import { Powered } from "./_components/powered";
 import { DivideBar } from "./_components/divide-bar";
 import { MintSection } from "./_components/mint-section";
+import { NftItemCard } from "@/components/nft-item-card";
 const IndexPage = () => {
   return (
     <React.Suspense fallback={<div>Loading...</div>}>
@@ -11,6 +12,9 @@ const IndexPage = () => {
       <Powered />
       <DivideBar />
       <MintSection />
+      <div className="grid grid-cols-5 items-start gap-8">
+        <NftItemCard />
+      </div>
     </React.Suspense>
   );
 };

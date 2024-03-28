@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "themegenix.net",
       },
+      {
+        protocol: "https",
+        hostname: "themesflat.co",
+      },
     ],
   },
 };
