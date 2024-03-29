@@ -2,7 +2,7 @@ import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Link from "next/link";
 
-export const NftItemCard = () => {
+export const NftItemCard = ({ ...props }) => {
   return (
     <div className="group dark:bg-[#ffffff0d] p-5 rounded-[20px] duration-500 transition-all hover:-translate-y-[10px]">
       <div className="relative mb-5 rounded-[20px] overflow-hidden">
