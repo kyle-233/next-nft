@@ -89,6 +89,7 @@ const config = {
       },
       boxShadow: {
         cardxl: "0 3px 8px -1px rgba(0, 0, 0, 0.08)",
+        "cardxl-light": "0px 3px 16px rgba(47, 83, 109, 0.12)",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

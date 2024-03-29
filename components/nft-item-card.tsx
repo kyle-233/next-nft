@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const NftItemCard = ({ ...props }) => {
   return (
-    <div className="group dark:bg-[#ffffff0d] p-5 rounded-[20px] duration-500 transition-all hover:-translate-y-[10px]">
+    <div className="group dark:bg-[#ffffff0d] p-5 rounded-[20px] duration-500 transition-all hover:-translate-y-[10px] shadow-cardxl-light dark:shadow-cardxl">
       <div className="relative mb-5 rounded-[20px] overflow-hidden">
         <AspectRatio ratio={1 / 1}>
           <Image
