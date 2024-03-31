@@ -1,6 +1,24 @@
+"use client";
 import { NftItemCard } from "@/components/nft-item-card";
+import { useEffect } from "react";
+// require("dotenv").config();
+export function PopularNft({ getOwnerNftsPromise }: any) {
+  // const [ownerNfts] = await Promise.all([getOwnerNftsPromise]);
+  // console.log("ownerNfts---", ownerNfts);
+  const getNfts = async () => {
+    const options = {
+      method: "GET",
+      headers: { accept: "application/json" },
+    };
+    const response = await fetch(
+      `https://eth-sepolia.g.alchemy.com/nft/v3/xxx/getNFTsForOwner?owner=xxx&pageSize=2`,
+      options,
+    );
+  };
 
-export const PopularNft = () => {
+  useEffect(() => {
+    getNfts();
+  }, []);
   return (
     <div className=" pt-[120px] pb-[100px]">
       <div className="container">
@@ -19,4 +37,4 @@ export const PopularNft = () => {
       </div>
     </div>
   );
-};
+}
