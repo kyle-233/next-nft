@@ -12,7 +12,7 @@ export async function getOwnerNfts(): Promise<any> {
         };
         console.log("process.env.ALCHEMY_API_KEY", process.env.ALCHEMY_API_KEY);
         const response = await fetch(
-          `https://eth-sepolia.g.alchemy.com/nft/v3/xxx/getNFTsForOwner?owner=xxx&pageSize=2`,
+          `https://eth-sepolia.g.alchemy.com/nft/v3/${process.env.ALCHEMY_API_KEY}/getNFTsForOwner?owner=xxx&pageSize=2`,
           options,
         );
         if (!response.ok) {
@@ -20,13 +20,13 @@ export async function getOwnerNfts(): Promise<any> {
         }
         const data = (await response.json()) as any;
 
-        return process.env.ALCHEMY_API_KEY;
+        return data;
       },
       ["owner-nft"],
       {
         tags: ["owner-nft"],
       },
-    );
+    )();
   } catch (err) {
     console.error(err);
     return null;

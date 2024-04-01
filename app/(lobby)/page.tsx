@@ -6,7 +6,7 @@ import { MintSection } from "./_components/mint-section";
 import { PopularNft } from "./_components/popular-nft";
 import { getOwnerNfts } from "@/lib/fetchers/alchemy";
 const IndexPage = async () => {
-  // const getOwnerNftsPromise = getOwnerNfts();
+  const getOwnerNftsPromise = getOwnerNfts();
   return (
     <React.Suspense fallback={<div>Loading...</div>}>
       <HomeHero />
@@ -14,7 +14,7 @@ const IndexPage = async () => {
       <DivideBar />
       <MintSection />
       <DivideBar />
-      <PopularNft {...{}} />
+      <PopularNft {...{ getOwnerNftsPromise }} />
     </React.Suspense>
   );
 };
